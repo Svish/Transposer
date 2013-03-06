@@ -10,10 +10,10 @@ class Transposer
 	public static function parse($song, $key)
 	{
 		if($song === NULL)
-			throw new Exception('Song cannot be NULL.');
+			throw new \Exception('Song cannot be NULL.');
 
 		if( ! array_key_exists($key, self::$SCALES))
-			throw new Exception('Unknown key: '.$key);
+			throw new \Exception('Unknown key: '.$key);
 
 		return new Transposer_Song($song, $key);
 	}
@@ -78,10 +78,10 @@ class Transposer
 	public function __construct($original, $target)
 	{
 		if( ! array_key_exists($original, self::$SCALES))
-			throw new Exception('Unknown key: '.$original);
+			throw new \Exception('Unknown key: '.$original);
 
 		if( ! array_key_exists($target, self::$SCALES))
-			throw new Exception('Unknown key: '.$target);
+			throw new \Exception('Unknown key: '.$target);
 
 		// Make a copy of the chords starting with the original
 		$old = self::$CHORDS;
@@ -153,7 +153,7 @@ class Transposer
 
 			// If we get here, we have an unhandled case.
 			// Which we really shouldn't have...
-			throw new Exception("Unhandled case.");
+			throw new \Exception("Unhandled case.");
 		}
 	}
 
@@ -239,7 +239,7 @@ class Transposer_Verse
 				// Try create a key line
 				$this->lines[] = new Transposer_ChordLine($line);
 			}
-			catch(Exception $e)
+			catch(\Exception $e)
 			{
 				// Otherwise it's just a regular text line
 				$this->lines[] = $line;
@@ -269,7 +269,7 @@ class Transposer_ChordLine
 
 		// Assume this is not a chord line unless all text was eaten
 		if($len > 0)
-			throw new Exception('Not a chord line: '.$text);
+			throw new \Exception('Not a chord line: '.$text);
 	}
 	public function __toString()
 	{
