@@ -1,5 +1,5 @@
 {
-    "name": "geekality/Transposer",
+    "name": "geekality/transposer",
     "description": "Plain text song parser and chord transposer",
     "keywords": ["chords","music","transpose","key"],
     "homepage": "https://github.com/Svish/Transposer",
