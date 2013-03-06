@@ -3,7 +3,7 @@
 /**
  * Builds a map for transposing chords between two different keys.
  *
- * @link https://github.com/Svish/PhpTransposer
+ * @link https://github.com/Svish/Transposer
  */
 class Transposer
 {
