@@ -223,7 +223,7 @@ class Transposer_Song
 	 */
 	public function __toString()
 	{
-		return '<div class="lyrics">'.PHP_EOL.implode('', $this->verses).'</div>'.PHP_EOL;
+		return '<div class="lyrics">'.implode('', $this->verses).'</div>'.PHP_EOL;
 	}
 }
 
@@ -247,7 +247,7 @@ class Transposer_Verse
 	}
 	public function __toString()
 	{
-		return '<pre class="verse">'.implode(PHP_EOL,$this->lines).'</pre>'.PHP_EOL;
+		return '<pre class="verse">'.implode(PHP_EOL,$this->lines).'</pre>';
 	}
 }
 
