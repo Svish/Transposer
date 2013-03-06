@@ -29,7 +29,7 @@ Example usage
 
     $song = Transposer::parse($text, 'D');
     if(isset($_GET['key']))
-    	$song->transpose($_GET['key']);
+        $song->transpose($_GET['key']);
     
     echo $song->get_key_selector('song.php?key=');
     echo $song;
