@@ -1,4 +1,4 @@
-<?php
+<?php namespace Geekality;
 
 /**
  * Builds a map for transposing chords between two different keys.
