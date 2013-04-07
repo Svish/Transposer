@@ -7,15 +7,20 @@
  */
 class Transposer
 {
-	public static function parse($song, $key)
+	public static function parse($song, $original_key)
 	{
+		if(class_exists('Timer'))
+			\Timer::start(__METHOD__, array('[lyrics]', $original_key));
+
 		if($song === NULL)
 			throw new \Exception('Song cannot be NULL.');
 
-		if( ! array_key_exists($key, self::$SCALES))
-			throw new \Exception('Unknown key: '.$key);
+		$r = new Transposer_Song($song, $original_key);
 
-		return new Transposer_Song($song, $key);
+		if(class_exists('Timer'))
+			\Timer::stop();
+
+		return $r;
 	}
 
 	/**
@@ -177,11 +182,15 @@ class Transposer
 class Transposer_Song
 {
 	private $verses = array();
+	private $original_key;
 	private $key;
 
-	public function __construct($song, $key)
+	public function __construct($song, $original_key)
 	{
-		$this->key = $key;
+		if( ! array_key_exists($original_key, Transposer::$SCALES))
+			throw new \Exception('Unknown key: '.$original_key);
+
+		$this->original_key = $original_key;
 
 		// Split song into verses
 		foreach(preg_split('/(?:\r\n){2,}/', $song) as $verse)
@@ -190,10 +199,13 @@ class Transposer_Song
 
 	public function transpose($key)
 	{
+		if(class_exists('Timer'))
+			\Timer::start(__METHOD__);
+
 		if($key === NULL OR $key == $this->key)
 			return;
 
-		$t = new Transposer($this->key, $key);
+		$t = new Transposer($this->original_key, $key);
 		$this->key = $key;
 
 		foreach($this->verses as $verse)
@@ -201,17 +213,30 @@ class Transposer_Song
 				if( ! is_string($line))
 					foreach($line->chords as $chord)
 						$chord->chord = $t->transpose($chord->chord);
+
+		if(class_exists('Timer'))
+			\Timer::stop();
 	}
 
 	public function get_key_selector($url)
 	{
 		$keys = '';
 		foreach(array_keys(Transposer::$SCALES) as $k)
+		{
+			$href = $url.urlencode($k);
+
+			$classes = array();
+			if($k == $this->original_key)
+				$classes[] = 'original';
+			if($k == $this->key)
+				$classes[] = 'key';
+
 			$keys .= sprintf('<a href="%s"%s>%s</a>',
-				$url.urlencode($k),
-				$k == $this->key ? ' class="key"' : '',
+				$href,
+				$classes ? ' class="'.implode(' ', $classes).'"' : NULL,
 				$k
 				);
+		}
 
 		return '<div class="keys">'.$keys.'</div>'.PHP_EOL;
 	}
