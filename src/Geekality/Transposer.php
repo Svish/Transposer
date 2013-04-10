@@ -251,7 +251,7 @@ class Transposer_Song
 	 */
 	public function __toString()
 	{
-		return '<div class="lyrics">'.implode('', $this->verses).'</div>'.PHP_EOL;
+		return '<div class="lyrics notranslate">'.implode('', $this->verses).'</div>'.PHP_EOL;
 	}
 }
 
