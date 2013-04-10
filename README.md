@@ -3,6 +3,18 @@ Introduction
 
 For transposing simple songs written as plain text with chords above the lyrics.
 
+Install
+---
+
+If you're using [Composer](http://getcomposer.org), which you really should, simply require the package 
+[geekality/transposer](https://packagist.org/packages/geekality/transposer) in your `composer.json`. Otherwise download 
+and include as per usual :)
+
+    "require":
+	{
+		"geekality/transposer": "dev-master",
+	},
+
 Example usage
 ---
 
