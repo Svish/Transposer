@@ -187,7 +187,8 @@ class Transposer_Song
 
 	public function __construct($song, $original_key)
 	{
-		if( ! array_key_exists($original_key, Transposer::$SCALES))
+		if( $original_key !== NULL 
+		AND ! array_key_exists($original_key, Transposer::$SCALES))
 			throw new \Exception('Unknown key: '.$original_key);
 
 		$this->original_key = $original_key;
@@ -202,7 +203,9 @@ class Transposer_Song
 		if(class_exists('Timer'))
 			\Timer::start(__METHOD__);
 
-		if($key === NULL OR $key == $this->key)
+		if($this->original_key === NULL
+		OR $key === NULL
+		OR $key == $this->key)
 			return;
 
 		$t = new Transposer($this->original_key, $key);
