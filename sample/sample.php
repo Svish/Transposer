@@ -3,21 +3,7 @@
 include('../src/Geekality/Transposer.php');
 
 // song.php
-$text = <<<SONG
-D       G     D
-This is first verse
-
-(chorus)
-G    Bm   A
-This is a chorus
-
-D       G      D
-This is second verse
-
-(chorus)
-G    Bm   A
-This is a chorus
-SONG;
+$text = file_get_contents('sample.txt');
 
 $song = Geekality\Transposer::parse($text, 'D');
 if(isset($_GET['key']))
