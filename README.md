@@ -46,6 +46,7 @@ Example usage
     echo $song->get_key_selector('song.php?key=');
     echo $song;
 
+For an example with chorus and simple css styling, see [sample.php](sample/sample.php).
 
 License
 ===
