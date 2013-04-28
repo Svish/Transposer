@@ -194,7 +194,7 @@ class Transposer_Song
 		$this->original_key = $original_key;
 
 		// Split song into verses
-		foreach(preg_split('/(?:\r\n){2,}/', $song) as $verse)
+		foreach(preg_split('/(?:\r\n|\r|\n){2,}/', $song) as $verse)
 			$this->verses[] = new Transposer_Verse($verse);
 	}
 
@@ -234,14 +234,14 @@ class Transposer_Song
 			if($k == $this->key)
 				$classes[] = 'key';
 
-			$keys .= sprintf('<a href="%s"%s>%s</a>',
+			$keys .= sprintf('<li><a href="%s"%s>%s</a></li>',
 				$href,
 				$classes ? ' class="'.implode(' ', $classes).'"' : NULL,
 				$k
 				);
 		}
 
-		return '<div class="keys">'.$keys.'</div>'.PHP_EOL;
+		return '<ul class="keys">'.$keys.'</ul>'.PHP_EOL;
 	}
 
 	/**
@@ -251,17 +251,22 @@ class Transposer_Song
 	 */
 	public function __toString()
 	{
-		return '<div class="lyrics notranslate">'.implode('', $this->verses).'</div>'.PHP_EOL;
+		return '<div class="lyrics notranslate">'
+			. implode('', $this->verses)
+			. '</div>'
+			. PHP_EOL;
 	}
 }
 
 class Transposer_Verse
 {
 	public $lines = array();
+	public $type = 'verse';
+
 	public function __construct($verse)
 	{
 		// Split verse into lines
-		foreach(preg_split('%\r\n%', $verse) as $line)
+		foreach(preg_split('%\r\n|\r|\n%', $verse) as $line)
 			try
 			{
 				// Try create a key line
@@ -269,13 +274,20 @@ class Transposer_Verse
 			}
 			catch(\Exception $e)
 			{
-				// Otherwise it's just a regular text line
-				$this->lines[] = $line;
+				// Check if line is verse type
+				if(preg_match('%^\((\w++)\)%u', $line, $r))
+					$this->type = $r[1];
+				// Otherwise regular text line
+				else
+					$this->lines[] = $line;
 			}
 	}
 	public function __toString()
 	{
-		return '<pre class="verse">'.implode(PHP_EOL,$this->lines).'</pre>';
+		return '<pre class="'.$this->type.'">'
+			. implode(PHP_EOL,$this->lines)
+			. '</pre>'
+			. PHP_EOL;
 	}
 }
 
