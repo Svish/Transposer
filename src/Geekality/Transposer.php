@@ -7,6 +7,9 @@
  */
 class Transposer
 {
+	/**
+	 * Parse text into transposable song.
+	 */
 	public static function parse($song, $original_key)
 	{
 		if(class_exists('Timer'))
@@ -194,7 +197,7 @@ class Transposer_Song
 		$this->original_key = $original_key;
 
 		// Split song into verses
-		foreach(preg_split('/(?:\r\n|\r|\n){2,}/', $song) as $verse)
+		foreach(preg_split('/(?:\r\n){2,}/', $song) as $verse)
 			$this->verses[] = new Transposer_Verse($verse);
 	}
 
@@ -266,7 +269,7 @@ class Transposer_Verse
 	public function __construct($verse)
 	{
 		// Split verse into lines
-		foreach(preg_split('%\r\n|\r|\n%', $verse) as $line)
+		foreach(preg_split('%\r\n%', $verse) as $line)
 			try
 			{
 				// Try create a key line
