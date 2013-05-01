@@ -2,7 +2,6 @@
 
 include('../src/Geekality/Transposer.php');
 
-// song.php
 $text = file_get_contents('sample.txt');
 
 $song = Geekality\Transposer::parse($text, 'D');
