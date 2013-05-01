@@ -289,8 +289,7 @@ class Transposer_Verse
 	{
 		return '<pre class="'.$this->type.'">'
 			. implode(PHP_EOL,$this->lines)
-			. '</pre>'
-			. PHP_EOL;
+			. '</pre>';
 	}
 }
 
