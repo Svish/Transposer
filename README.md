@@ -12,7 +12,7 @@ and include as per usual :)
 
     "require":
 	{
-		"geekality/transposer": "dev-master",
+		"geekality/transposer": "1.*",
 	},
 
 Example usage
