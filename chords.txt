@@ -1,0 +1,421 @@
+C Chords
+C Maj
+C Min
+C 5
+C 7th
+C Maj7
+C Min7
+C Min Maj7
+C Sus4
+C Sus2
+C Dim
+C Dim7
+C Aug
+C 6
+C Min6
+C 9
+C Min9
+C Maj9
+C Min Maj9
+C 11
+C Min11
+C Maj11
+C Min Maj11
+C 13
+C Min13
+C Maj13
+C Min Maj13
+C add9
+C Min add9
+C Min 6 add9
+C 7th add9
+C 6 sus4
+C 7th sus4
+C Maj7th sus4
+C 9 sus4
+C Maj9 sus4
+Db Maj
+Db Min
+Db 5
+Db 7th
+Db Maj7
+Db Min7
+Db Min Maj7
+Db Sus4
+Db Sus2
+Db Dim
+Db Dim7
+Db Aug
+Db 6
+Db Min6
+Db 9
+Db Min9
+Db Maj9
+Db Min Maj9
+Db 11
+Db Min11
+Db Maj11
+Db Min Maj11
+Db 13
+Db Min13
+Db Maj13
+Db Min Maj13
+Db add9
+Db Min add9
+Db Min 6 add9
+Db 7th add9
+Db 6 sus4
+Db 7th sus4
+Db Maj7th sus4
+Db 9 sus4
+Db Maj9 sus4
+D Maj
+D Min
+D 5
+D 7th
+D Maj7
+D Min7
+D Min Maj7
+D Sus4
+D Sus2
+D Dim
+D Dim7
+D Aug
+D 6
+D Min6
+D 9
+D Min9
+D Maj9
+D Min Maj9
+D 11
+D Min11
+D Maj11
+D Min Maj11
+D 13
+D Min13
+D Maj13
+D Min Maj13
+D add9
+D Min add9
+D Min 6 add9
+D 7th add9
+D 6 sus4
+D 7th sus4
+D Maj7th sus4
+D 9 sus4
+D Maj9 sus4
+Eb Maj
+Eb Min
+Eb 5
+Eb 7th
+Eb Maj7
+Eb Min7
+Eb Min Maj7
+Eb Sus4
+Eb Sus2
+Eb Dim
+Eb Dim7
+Eb Aug
+Eb 6
+Eb Min6
+Eb 9
+Eb Min9
+Eb Maj9
+Eb Min Maj9
+Eb 11
+Eb Min11
+Eb Maj11
+Eb Min Maj11
+Eb 13
+Eb Min13
+Eb Maj13
+Eb Min Maj13
+Eb add9
+Eb Min add9
+Eb Min 6 add9
+Eb 7th add9
+Eb 6 sus4
+Eb 7th sus4
+Eb Maj7th sus4
+Eb 9 sus4
+Eb Maj9 sus4
+E Maj
+E Min
+E 5
+E 7th
+E Maj7
+E Min7
+E Min Maj7
+E Sus4
+E Sus2
+E Dim
+E Dim7
+E Aug
+E 6
+E Min6
+E 9
+E Min9
+E Maj9
+E Min Maj9
+E 11
+E Min11
+E Maj11
+E Min Maj11
+E 13
+E Min13
+E Maj13
+E Min Maj13
+E add9
+E Min add9
+E Min 6 add9
+E 7th add9
+E 6 sus4
+E 7th sus4
+E Maj7th sus4
+E 9 sus4
+E Maj9 sus4
+F Maj
+F Min
+F 5
+F 7th
+F Maj7
+F Min7
+F Min Maj7
+F Sus4
+F Sus2
+F Dim
+F Dim7
+F Aug
+F 6
+F Min6
+F 9
+F Min9
+F Maj9
+F Min Maj9
+F 11
+F Min11
+F Maj11
+F Min Maj11
+F 13
+F Min13
+F Maj13
+F Min Maj13
+F add9
+F Min add9
+F Min 6 add9
+F 7th add9
+F 6 sus4
+F 7th sus4
+F Maj7th sus4
+F 9 sus4
+F Maj9 sus4
+Gb Maj
+Gb Min
+Gb 5
+Gb 7th
+Gb Maj7
+Gb Min7
+Gb Min Maj7
+Gb Sus4
+Gb Sus2
+Gb Dim
+Gb Dim7
+Gb Aug
+Gb 6
+Gb Min6
+Gb 9
+Gb Min9
+Gb Maj9
+Gb Min Maj9
+Gb 11
+Gb Min11
+Gb Maj11
+Gb Min Maj11
+Gb 13
+Gb Min13
+Gb Maj13
+Gb Min Maj13
+Gb add9
+Gb Min add9
+Gb Min 6 add9
+Gb 7th add9
+Gb 6 sus4
+Gb 7th sus4
+Gb Maj7th sus4
+Gb 9 sus4
+Gb Maj9 sus4
+G Maj
+G Min
+G 5
+G 7th
+G Maj7
+G Min7
+G Min Maj7
+G Sus4
+G Sus2
+G Dim
+G Dim7
+G Aug
+G 6
+G Min6
+G 9
+G Min9
+G Maj9
+G Min Maj9
+G 11
+G Min11
+G Maj11
+G Min Maj11
+G 13
+G Min13
+G Maj13
+G Min Maj13
+G add9
+G Min add9
+G Min 6 add9
+G 7th add9
+G 6 sus4
+G 7th sus4
+G Maj7th sus4
+G 9 sus4
+G Maj9 sus4
+Ab Maj
+Ab Min
+Ab 5
+Ab 7th
+Ab Maj7
+Ab Min7
+Ab Min Maj7
+Ab Sus4
+Ab Sus2
+Ab Dim
+Ab Dim7
+Ab Aug
+Ab 6
+Ab Min6
+Ab 9
+Ab Min9
+Ab Maj9
+Ab Min Maj9
+Ab 11
+Ab Min11
+Ab Maj11
+Ab Min Maj11
+Ab 13
+Ab Min13
+Ab Maj13
+Ab Min Maj13
+Ab add9
+Ab Min add9
+Ab Min 6 add9
+Ab 7th add9
+Ab 6 sus4
+Ab 7th sus4
+Ab Maj7th sus4
+Ab 9 sus4
+Ab Maj9 sus4
+A Maj
+A Min
+A 5
+A 7th
+A Maj7
+A Min7
+A Min Maj7
+A Sus4
+A Sus2
+A Dim
+A Dim7
+A Aug
+A 6
+A Min6
+A 9
+A Min9
+A Maj9
+A Min Maj9
+A 11
+A Min11
+A Maj11
+A Min Maj11
+A 13
+A Min13
+A Maj13
+A Min Maj13
+A add9
+A Min add9
+A Min 6 add9
+A 7th add9
+A 6 sus4
+A 7th sus4
+A Maj7th sus4
+A 9 sus4
+A Maj9 sus4
+B Maj
+B Min
+B 5
+B 7th
+B Maj7
+B Min7
+B Min Maj7
+B Sus4
+B Sus2
+B Dim
+B Dim7
+B Aug
+B 6
+B Min6
+B 9
+B Min9
+B Maj9
+B Min Maj9
+B 11
+B Min11
+B Maj11
+B Min Maj11
+B 13
+B Min13
+B Maj13
+B Min Maj13
+B add9
+B Min add9
+B Min 6 add9
+B 7th add9
+B 6 sus4
+B 7th sus4
+B Maj7th sus4
+B 9 sus4
+B Maj9 sus4
+Bb Maj
+Bb Min
+Bb 5
+Bb 7th
+Bb Maj7
+Bb Min7
+Bb Min Maj7
+Bb Sus4
+Bb Sus2
+Bb Dim
+Bb Dim7
+Bb Aug
+Bb 6
+Bb Min6
+Bb 9
+Bb Min9
+Bb Maj9
+Bb Min Maj9
+Bb 11
+Bb Min11
+Bb Maj11
+Bb Min Maj11
+Bb 13
+Bb Min13
+Bb Maj13
+Bb Min Maj13
+Bb add9
+Bb Min add9
+Bb Min 6 add9
+Bb 7th add9
+Bb 6 sus4
+Bb 7th sus4
+Bb Maj7th sus4
+Bb 9 sus4
+Bb Maj9 sus4
