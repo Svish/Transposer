@@ -1,2 +1,5 @@
 # Disable LF normalization for all files
 * -text
+
+# Ignore sample dir on export
+sample/ export-ignore
